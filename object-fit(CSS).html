@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        div{
+            height: 500px;
+            width: 500px;
+            border: 2px solid black;
+            margin-bottom: 500px;
+        }
+        div img{
+            /* If we don't specify the width and height,,,
+             Then <img> will be in it's original size  
+             And <img> may overflow from it's container */
+
+            height: 300px; /*height of <img> */
+            width: 300px; /*width of <img> */
+            
+            object-fit: cover; /* KEEP <img> width:height ration as the original*/
+        }
+    </style>
+</head>
+<body>
+    <div><img src="./images/sunset sitting.jpg" alt="a girl sitting on the top of hill while the sun is setting."></div>
+</body>
+</html>

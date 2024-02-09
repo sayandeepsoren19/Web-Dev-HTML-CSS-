@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #line {
+        border: 0.5px solid white;
+      }
+      #one {
+        background-color: aqua;
+
+        height: 200px;
+        width: 200px;
+
+        padding: 10px;
+        border: 10px solid black;
+
+        /* box-sizing: default */
+        
+        /* Padding and Border will be added to the Width
+            So, total width will be 200+(10x2)+(10x2) = 240px
+           And, total heighh will be 200+(10x2)+(10x2) = 240px */
+      }
+      #two {
+        background-color: cadetblue;
+
+        height: 200px;
+        width: 200px;
+
+        padding: 10px;
+        border: 10px solid black;
+
+        box-sizing: border-box;
+        /* box-sizing: border-box */
+
+        /* Padding and Border will be added to the ((((WITH IN)))) Width
+            So, total width & height will be 200px
+            And, Original content's width & height will be reduced to
+            200 - ((10x2)+(10x2)) = 160px  */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="one"></div>
+    <div id="line"></div>
+    <div id="two"></div>
+  </body>
+</html>
